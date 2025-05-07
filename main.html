@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <form action="#" method="post">
+    <!-- name -->
+    <label for="name">First name:</label><br>
+    <input type="text" id="name" placeholder="Name" required><br>
+    <!-- phone number -->
+    <label for="email">Email:</label><br>
+    <input type="Email" id="email" placeholder="Email" required><br>
+   
+	<!-- Gender -->
+    <label for="gender_m">male</label>
+    <input type="radio"  id="gender_m" required>
+	<label for="gender_f">female</label>
+    <input type="radio" id="gender_f" required ><br>
+
+    
+	<!-- multiSelect -->
+    <label for="cars">Choose the car you like:</label>
+    <select name="cars" id="cars" type="select" placeholder="--Please choose an option--" required >
+      <option value="bmw">bmw</option>
+      <option value="audi">audi</option>
+      <option value="verna">verna</option>
+      <option value="maruti">maruti</option>
+    </select><br>
+
+	<!-- number  -->
+      <label for="age">Age</label>
+	  <input type="number" id="age" placeholder="Age" required><br>	 
+	
+	  <!-- date  -->
+	<label for="age">DOB</label>
+	<input type="date" id="dob" required><br>
+
+	<!-- phone number-->
+	<label for="tel">PhoneNumber</label>
+	<input type="Tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
+     
+	<!-- password  -->
+	<label for="password">Password</label>
+	<input type="Password" id="password" placeholder="Password" required><br>
+
+	<!-- checkbox -->
+   <label for="tos">I agree to the TOS</label>
+   <input type="checkbox" id="tos" required><br>
+    
+   <!-- button -->
+    <button type="submit">Submit</button>
+  </form>
 
 </body>
 
