@@ -9,18 +9,20 @@
 
 <body>
   <form action="#" method="post">
-    <!-- name -->
+    
+	<!-- name -->
     <label for="name">First name:</label><br>
     <input type="text" id="name" placeholder="Name" required><br>
-    <!-- phone number -->
+    
+	<!-- phone number -->
     <label for="email">Email:</label><br>
     <input type="Email" id="email" placeholder="Email" required><br>
    
 	<!-- Gender -->
     <label for="gender_m">male</label>
-    <input type="radio"  id="gender_m" required>
+    <input type="radio" name="gender" id="gender_m" required>
 	<label for="gender_f">female</label>
-    <input type="radio" id="gender_f" required ><br>
+    <input type="radio"  name="gender" id="gender_f" required ><br>
 
     
 	<!-- multiSelect -->
@@ -37,7 +39,7 @@
 	  <input type="number" id="age" placeholder="Age" required><br>	 
 	
 	  <!-- date  -->
-	<label for="age">DOB</label>
+	<label for="dob">DOB</label>
 	<input type="date" id="dob" required><br>
 
 	<!-- phone number-->
